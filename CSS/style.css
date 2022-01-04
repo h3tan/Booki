@@ -431,6 +431,7 @@ footer
 .Menu a
 {
     text-decoration: none;
+    color: black;
 }
 .Menu a:visited
 {
