@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+}
+
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    max-width: 1440px;
+}
+
+header
+{
+    width: 80%;
+    margin: auto;
+}
+
+main
+{
+    width: 80%;
+    margin: auto;
+}
+
+#Principal
+{
+    display: flex;
+    justify-content: space-between;
+}
+#Principal img
+{
+    width: 100px;
+}
+#Principal ul
+{
+    list-style-type: none;
+    display: flex;
+    margin-top: 0;
+}
+#Principal li
+{
+    padding: 30px;
+    border-top: 2px solid transparent;
+}
+#Principal a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/* Partie Recherche */
+
+#BarreRecherche
+{
+    display: flex;
+    border: none;
+    padding: 0;
+}
+#IconeInfo
+{
+    display: flex;
+    width: 40px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+#BarreRecherche input
+{
+    width: 25%;
+    height: 50px;
+    padding-left: 10px;
+    border: 2px solid #F2F2F2;
+    outline: none;
+    font-weight: bold;
+}
+#BoutonImage
+{
+    display: none;
+}
+#BoutonTexte
+{
+    height: 50px;
+    background-color: #0065FC;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    padding-right: 10px;
+    border: none;
+    cursor:pointer;
+}
+
+/* Partie Filtres */
+
+#Filtres
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ConteneurFiltres
+{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+.FiltreBouton
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 2px solid lightgray;
+    border-left: none;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.IconeFiltre
+{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #0065FC;
+}
+.FiltreBouton span
+{
+    font-weight: bold;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Section Hebergements et Populaires */
+
+#Hebergements
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#Hebergements a
+{
+    text-decoration: none;
+    color: black;
+}
+#InfoHebergement
+{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#IconeInfoHebergement
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: white;
+    color: #0065FC;
+    font-size: 10px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+.Etoiles
+{
+    font-size: 12px;
+}
+.EtoileBleue
+{
+    color: #0065FC;
+}
+.EtoileGrise
+{
+    color: lightgray;
+}
+
+/* Partie Hebergements */
+
+#VilleHebergements
+{
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 15px;
+}
+#VilleHebergements h3, h4
+{
+    margin-left: 3%;
+}
+#ConteneurHebergement
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1%;
+    row-gap: 25px;
+}
+.CarteHebergement
+{
+    width: 30%;
+    background-color: white;
+    padding: 0.5%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px lightgray;
+}
+.ImgHebergement
+{
+    height: 105px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+.ImgHebergement img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.DetailHebergement
+{
+    padding-left: 10px;
+}
+.CarteHebergement h5
+{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.CarteHebergement p
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* Partie Populaires */
+
+#VillePopulaire
+{
+    width: 32%;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+}
+#TitrePopulaire
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#ConteneurPopulaire
+{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 35px;
+    padding-top: 0;
+}
+.CartePopulaire
+{
+    height: 30%;
+    background-color: white;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px lightgray;
+}
+.CartePopulaire a
+{
+    display: flex;
+    height: 100%;
+}
+.ImgPopulaire
+{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 15px 0 0 15px;
+}
+.ImgPopulaire img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.DetailPopulaire
+{
+    position: relative;
+    width: 60%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.DetailPopulaire h5
+{
+    margin-top: 5px;
+}
+.DetailPopulaire p
+{
+    font-size: 12px;
+}
+.DetailPopulaire .Etoiles
+{
+    position: absolute;
+    bottom: 5px;
+}
+
+/* Partie Activites */
+
+#Activites
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#ConteneurActivite
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 361px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+#ConteneurActivite h5
+{
+    margin: 10px 0 10px 10px;
+    font-size: 12px;
+}
+#ConteneurActivite a
+{
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px 12px lightgray;
+}
+.Largeur, .Moitielargeur, .Tierslargeur, .Troisquartlargeur
+{
+    width: 22%;
+}
+.Largeur
+{
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px lightgray;
+    overflow: hidden;
+}
+.Largeur .ImgActivite 
+{
+    height: 327px;
+}
+.Tierslargeur
+{
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px lightgray;
+}
+.Tierslargeur .ImgActivite
+{
+    height: 94px;
+}
+.Troisquartlargeur
+{
+    align-self: flex-start;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px lightgray;
+}
+.Troisquartlargeur .ImgActivite
+{
+    height: 158px;
+}
+.Moitielargeur
+{
+    height: 45%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 12px lightgray;
+}
+.Moitielargeur .ImgActivite
+{
+    height: 128px;
+}
+.ImgActivite img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+footer
+{
+    height: 200px;
+    display: flex;
+    gap: 170px;
+    padding-left: 10%;
+    background: #F2F2F2;
+    border-radius: 15px;
+}
+.Menu
+{
+    display: flex;
+    flex-direction: column;
+}
+.Menu h4
+{
+    margin-bottom: 15px;
+    margin-left: 5px;
+}
+.Menu ul
+{
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+}
+.Menu li
+{
+    padding: 5px;
+    font-size: 12px;
+}
+.Menu a
+{
+    text-decoration: none;
+}
+.Menu a:visited
+{
+    color: black;
+}
+
+/* Effets de style */
+
+#Principal li:hover
+{
+    border-top: 2px solid #0065FC;
+}
+#Principal li:hover > a
+{
+    color: #0065FC;
+}
+#BoutonTexte:hover
+{
+    background-color: lightgray;
+    color: #0065FC;
+    transition: 400ms ease;
+}
+.FiltreBouton:hover
+{
+    cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+    transition: 400ms;
+}
+.CarteHebergement:hover, .CartePopulaire:hover, #ConteneurActivite article:hover
+{
+    background-color: lightblue;
+    transition: 500ms;
+}
+.Menu a:hover
+{
+    color: #0065FC;
+}

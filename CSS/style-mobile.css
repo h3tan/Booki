@@ -1,0 +1,273 @@
+@media screen and (max-width: 768px)
+{
+    header, section, footer
+    {
+    width: 100%;
+    margin: auto;
+    }
+
+    #Principal
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+    #Principal p
+    {
+        margin: auto;
+        margin-top: 5%;
+    }
+    #Principal nav
+    {
+        width: 100%;
+    }
+    #Principal ul
+    {
+        padding: 0;
+        text-align: center;
+    }
+    #Principal li
+    {
+        width: 50%;
+        border-bottom: 3px lightgray solid;
+    }
+    #Principal li:hover, #principal li:focus
+    {
+        border-top: none;
+        border-bottom: 3px blue solid;
+    }
+    #Slogan
+    {
+        font-size: 16px;
+        margin-left: 0;
+        padding: 0 10% 0 6%;
+        margin-top: 40px;
+    }
+
+/* Partie Recherche */
+
+    #BarreRecherche
+    {
+        justify-content: center;;
+    }
+    #BarreRecherche input
+    {
+        width: 70%;
+    }
+
+/* Partie Filtres */
+
+    #Filtres
+    {
+        justify-content: flex-start;
+    }
+    #Filtres h3
+    {
+        margin-left: 6%;
+    }
+
+/* Sections Hebergements et Populaires */
+
+    #Hebergements .information
+    {
+        order: 1;
+    }
+    #Hebergements #VilleHebergements
+    {
+        order: 3;
+    }
+    #Hebergements #VillePopulaire
+    {
+        order: 2;
+    }
+    #InfoHebergement
+    {
+        align-items: baseline;
+        padding-left: 0;
+        padding-right: 30px;
+    }
+    #IconeInfoHebergement
+    {
+        margin-left: 5%;
+        width: 34px;
+        height: 24px;
+    }
+    #InfoHebergement span
+    {
+    font-size: 17px;
+    }
+
+/* Partie Populaires */
+
+    #VillePopulaire
+    {
+        width: 100%;
+        padding: 0;
+        border-radius: 0;
+    }
+    #TitrePopulaire
+    {
+        font-size: 20px;
+    }
+    #TitrePopulaire h3
+    {
+        margin-left: 4%;
+    }
+    #TitrePopulaire i
+    {
+        margin-right: 4%;
+    }
+    #ConteneurPopulaire
+    {
+        display: block;
+        padding-bottom: 30px;
+        padding: 0;
+        border-radius: 0;
+    }
+    .CartePopulaire
+    {
+        width: 90%;
+        height: 150px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .DetailPopulaire h5
+    {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .DetailPopulaire p
+    {
+        margin-top: 7px;
+        font-size: 16px;
+    }
+    .DetailPopulaire .Etoiles
+    {
+        font-size: 16px;
+    }
+
+/* Partie Hebergements */
+
+    #VilleHebergements
+    {
+        width: 100%;
+        margin-top: 20px;
+        background-color: transparent;
+    }
+    #VilleHebergements h3
+    {
+        font-size: 20px;
+        margin-left: 6%;
+    }
+    #InfoHebergement
+    {
+        margin-left: 1%;
+    }
+    #ConteneurHebergement
+    {
+        display: block;
+        margin-top: 10%;
+        padding: 0;
+    }
+    .CarteHebergement
+    {
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .DetailHebergement h5
+    {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .DetailHebergement p
+    {
+        font-size: 16px;
+    }
+    .DetailHebergement .Etoiles
+    {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    #VilleHebergements h4
+    {
+        font-size: 20px;
+        margin-left: 6%;
+    }
+
+/* Partie Activites */
+
+    #Activites
+    {
+        display:block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #Activites h3
+    {
+        font-size: 25px;
+        margin-left: 5%;
+        margin-bottom: 0;
+    }
+    #ConteneurActivite
+    {
+        width: 100%;
+        height:auto;
+        margin: auto;
+        margin-top: 20px;
+        align-content: center;
+        row-gap: 20px;
+    }
+    #ConteneurActivite article
+    {
+        width: 90%;
+        height: 170px;
+        margin: auto;
+    }
+    #ConteneurActivite .ImgActivite
+    {
+        height: 75%;
+    }
+    #ConteneurActivite h5
+    {
+        font-size: 16px;
+    }
+
+    footer
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 100px;
+        padding-left: 0;
+        background: rgba(230, 230, 230, 0.774);
+        border-radius: 0;
+    }
+    .Menu
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 34px;
+    }
+    .Menu h4
+    {
+        margin-bottom: 20px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    .Menu ul
+    {
+        list-style-type: none;
+        margin-top: 0;
+        padding: 0;
+    }
+    .Menu li
+    {
+        padding: 5px;
+        font-size: 18px;
+    }
+}
