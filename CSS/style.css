@@ -175,6 +175,10 @@ main
     border: 1px solid lightgray;
     border-radius: 50%;
 }
+#Hebergements span
+{
+    font-weight: bold;
+}
 .Etoiles
 {
     font-size: 12px;
